@@ -1049,8 +1049,8 @@ input[type="text"] {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  margin-left: 90%;
-  margin-right: auto; 
+  margin-left: 50%;
+  margin-right: auto;
 }
 .gotoblog a {
   width: 50px;
