@@ -1,303 +1,40 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Mayank Mishra</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Mayank Mishra" />
-	<meta name="keywords" content="mayank mishra, mayank, mayankskb, mayank_skb, mishramayank" />
-	<meta name="author" content="Mayank Mishra" />
+---
+layout: default
+robots: noindex
+---
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+<!--<div class="main-post-list">-->
 
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+  <ul class="timeline">
+    
+    {% for project in site.data.projects %}
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+      <li class="timeline-inverted">
+        <div class="timeline-image">
+          <img class="img-me" src="{{ project.img | prepend: site.baseurl }}" alt="">
+        </div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4><a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank">{{ project.name }}</a></h4>
+          </div>
+          <div class="timeline-body">
+            {{ project.desc | markdownify }}
+            <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn" style="margin-top: 10px;">
+              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers"><i class="fa fa-star"></i><span class="star"> ...</span></a>&emsp;&emsp;
+              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network"><i class="fa fa-code-fork"></i><span class="fork"> ...</span></a>&emsp;&emsp;
+              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers"><i class="far fa-eye"></i><span class="watchers">...</span></a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers">
+              <div style="height: 10px;"></div>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+    <!--
+    <li class="timeline-inverted">
+      <div class="timeline-image">
+        <img class="user-image" src="{{site.baseurl}}{{ site.timeline-img }}" alt="">
+      </div>
+    </li> -->
+  </ul>
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+<!--</div>-->
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-	</head>
-	<body>
-
-	<div class="fh5co-loader"></div>
-
-	<div id="page">
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/image1.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb"></div>
-							<h1><span>Mayank Mishra</span></h1>
-							<h3><span>Coder | Geek | Data Scientist</span></h3>
-							<p>
-								<ul class="fh5co-social-icons">
-									<li><a href="https://twitter.com/mayank_skb"><i class="icon-twitter2"></i></a></li>
-									<li><a href="https://www.facebook.com/Mayank.skb"><i class="icon-facebook2"></i></a></li>
-									<li><a href="https://in.linkedin.com/in/mayankskb"><i class="icon-linkedin2"></i></a></li>
-									<li><a href="https://www.github.com/mayankskb"><i class="icon-github2"></i></a></li>
-									<li><a href="https://www.instagram.com/mayank.skb"><i class="icon-instagram2"></i></a></li>
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<div id="fh5co-about" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>About Me</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-8">
-					<h2>Hello There!</h2>
-					<p>Computers have always attracted my attention since I was in the first standard. Gradually my fondness for them start growing and since then I wanted to be a computer engineer.</p>
-					<p>I was fanatical about the algorithms and core computing stuff. My algorithmic fever introduced me to the realm of Machine Learning. I am exhilarated about how these miraculous artifacts have evolved and the inventiveness behind them.</p>
-					<p>Hi, I am <b>Mayank Mishra</b>. I work as a Data Scientist at Wolters Kluwer. Earlier I worked as a Data Science Engineer at Infostretch Corporation.<br/>Also, I do organize the Pune chapter for PyData.</p>
-					<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="https://twitter.com/mayank_skb"><i class="icon-twitter2"></i></a></li>
-							<li><a href="https://www.facebook.com/Mayank.skb"><i class="icon-facebook3"></i></a></li>
-							<li><a href="https://in.linkedin.com/in/mayankskb"><i class="icon-linkedin2"></i></a></li>
-							<li><a href="https://www.instagram.com/mayank.skb"><i class="icon-instagram2"></i></a></li>
-						</ul>
-					</p>
-				</div>
-				<div class="col-md-4">
-					<ul class="info">
-						<li><span class="first-block">Full Name:</span><span class="second-block">Mayank Mishra</span></li>
-						<li><span class="first-block">Email:</span><span class="second-block">mayank1996.skb@hotmail.com</span></li>
-						<li><span class="first-block">Website:</span><span class="second-block">www.mayankmishra.in</span></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-resume" class="fh5co-bg-color">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>My Resume</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline">
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>Work Experience</h3></div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Data Scientist</h3>
-									<span class="company">Wolters Kluwer - July 2019 - Current</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Software Engineer - Data Science</h3>
-									<span class="company">Infostretch Corporation - April 2019 - June 2019</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Associate Engineer - Data Science</h3>
-									<span class="company">Infostretch Corporation - July 2017 - March 2019</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
-							</div>
-						</li>
-
-						<br>
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>Education</h3></div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Graduation</h3>
-									<span class="company">Jaipur National University - 2013 - 2017</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
-							</div>
-						</li>
-			    	</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-	<div id="fh5co-blog" class="fh5co-bg-dark">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>My Writings</h2>
-					<p>Conversations in my words.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<div class="blog-text">
-							<span class="posted_on">March 7th 2019</span>
-							<section class="descr">
-								<h3><a href="https://blogs.oracle.com/datascience/convolutional-neural-networks%2c-explained">Convolutional Neural Networks, Explained</a></h3>
-								<p>ConvNets are inspired by the biological vision system where every neuron responds to stimuli only in the restricted region of the visual field called a receptive field.</p>
-							</section>
-							<ul class="stuff">
-								<li><a href="https://blogs.oracle.com/datascience/convolutional-neural-networks%2c-explained">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<div class="blog-text">
-							<span class="posted_on">Jan. 10th 2019</span>
-							<section class="descr">
-								<h3><a href="https://blogs.oracle.com/datascience/computer-vision-in-artificial-intelligence">Computer Vision in Artificial Intelligence</a></h3>
-								<p>It is like imparting human intelligence and instincts to computers. It is closely connected to Artificial Intelligence.</p>
-					  	</section>
-							<ul class="stuff">
-								<li><a href="https://blogs.oracle.com/datascience/computer-vision-in-artificial-intelligence">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<div class="blog-text">
-							<span class="posted_on">Jan. 16th 2016</span>
-							<section class="descr">
-								<h3><a href="./blogs/jan_16_2016.html">Data Structures : What it is ?</a></h3>
-								<p class="descr">In this era of Computer Science, we all running behind the technology such as Java, PHP, Python, ruby and many more and due to this running, we forget the plenary or requisite method of doing programming. With the advancement of the syllabus, a metric student can also do the programming either it is related to C, C++, Java or web site designing or developing.</p>
-							</section>
-							<ul class="stuff">
-								<li><a href="./blogs/jan_16_2016.html">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="gotoblog">
-					<a href="./blog_index.html"><i class="icon-arrow-right22"></i></a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-consult">
-		<div class="choose animate-box" id="contact-us-form">
-			<h2>Contact Me</h2>
-			<hr class = "bar">
-			<form action="https://formspree.io/xnqarbwr" method="POST">
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="fname" class="form-control" name="name" placeholder="Your Name">
-					</div>
-
-					<div class="col-md-6">
-						<input type="text" id="email" class="form-control" name="_replyto" placeholder="Your email address">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<textarea name="message" id="message" name="Message" cols="30" rows="10" class="form-control" placeholder="Your Message"></textarea>
-					</div>
-				</div>
-				<div class="form-group">
-					<button type="submit" id="sent-mail" class="btn btn-primary">Send</a>
-				</div>
-
-			</form>
-		</div>
-	</div>
-
-	<div id="fh5co-footer" class="fh5co-bg-dark">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<p>&copy; Mayank Mishra 2019</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
-	</div>
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
-
-	<!-- Main -->
-	<script src="js/main.js"></script>
-
-	</body>
-</html>

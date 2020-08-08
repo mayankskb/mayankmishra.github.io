@@ -1,0 +1,35 @@
+﻿# Site settings
+title: Mayank Mishra
+description: 'Business Card Page'
+url: 'http://mayankmishra.in'
+baseurl: ''
+profilepic: '/images/mayank.jpg'
+bkimage: '/images/bk1.jpg'
+google_analytics: UA-XXXXXX-X
+font_awesome: 'XXXXXXX.js'
+
+author:
+  name: 'Mayank Mishra'
+  email: mayank1996.skb@hotmail.com
+  twitter_username: iammayankmish
+#  facebook_username: joshgerdes
+  github_username:  mayankskb
+  linkedin_username:  mayankskb
+
+# Build settings
+destination: _site
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+#plugins: ['jekyll-paginate']
+exclude: ['README.md', 'screenshot-overview.png']
