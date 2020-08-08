@@ -15,6 +15,8 @@ author:
 #  facebook_username: joshgerdes
   github_username:  mayankskb
   linkedin_username:  mayankskb
+  speaker_deck: mayankskb
+  cv: Yes
 
 # Build settings
 destination: _site
