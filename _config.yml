@@ -1,4 +1,4 @@
-﻿# Site settings
+# Site settings
 title: Mayank Mishra
 description: 'Business Card Page'
 url: 'http://mayankmishra.in'
@@ -18,8 +18,18 @@ author:
   speaker_deck: mayankskb
   cv: Yes
 
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
 # Build settings
 destination: _site
+paginate: 10
+permalink: /:year/:title/
 markdown: kramdown
 highlighter: rouge
 
@@ -33,5 +43,5 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-#plugins: ['jekyll-paginate']
-exclude: ['README.md', 'screenshot-overview.png']
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
