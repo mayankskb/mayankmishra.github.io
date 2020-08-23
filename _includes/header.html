@@ -75,6 +75,17 @@
             </li>
             {% endif %}
 
+            {% if site.author.medium %}
+            <!-- Meetup -->
+            <li class="navigation__item">
+              <a href="https://medium.com/@{{ site.author.medium }}" title="{{ site.author.medium }}" target="_blank">
+                <!--<div style="font-size: 1.4rem;"><i class="fab fa-meetup fa-lg"></i></div>-->
+                <i class="fab fa-medium"></i>
+                <span class="label">Medium</span>
+              </a>
+            </li>
+            {% endif %}            
+
             {% if site.author.cv %}
               <!-- Email -->
               <li class="navigation__item">
