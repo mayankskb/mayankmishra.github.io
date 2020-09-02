@@ -12,6 +12,6 @@ The [original article][original article] was published on https://towardsdatasci
 
 If you have any questions feel free to write to [me](mailto:mayank1996.skb@hotmail.com).
 
-[enable sight to computers]: https://www.datascience.com/blog/computer-vision-in-artificial-intelligence
-[neural networks]: https://datascience.hubs.vidyard.com/watch/CYfbzzj57RPfCwoMnEHD4M
-[original article]: https://towardsdatascience.com/convolutional-neural-networks-explained-9cc5188c4939
+[enable sight to computers]: https://www.datascience.com/blog/computer-vision-in-artificial-intelligence  
+[neural networks]: https://datascience.hubs.vidyard.com/watch/CYfbzzj57RPfCwoMnEHD4M  
+[original article]: https://towardsdatascience.com/convolutional-neural-networks-explained-9cc5188c4939  
