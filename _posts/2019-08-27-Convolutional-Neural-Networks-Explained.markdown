@@ -1,5 +1,5 @@
 ---
-title:  "Convolutional Neural Networks, Explained"
+title:  "Convolutional Neural Networks Explained"
 date:   2020-08-27
 categories: [Computer Vision, Neural Networks, Convolution Neural Network]
 tags: [Computer Vision, Artificial Intelligence, CV, ANN, Machine Learning]
