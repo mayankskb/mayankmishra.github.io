@@ -1,6 +1,6 @@
 ---
 title:  "Computer Vision in Artificial Intelligence"
-date:   2019-01-10
+date:   2020-08-20
 categories: [Computer Vision]
 tags: [Computer Vision, Artificial Intelligence, CV, ANN, Machine Learning]
 ---
