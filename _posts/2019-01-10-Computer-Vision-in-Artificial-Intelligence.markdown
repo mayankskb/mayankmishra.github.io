@@ -10,10 +10,11 @@ We have prototype cars that can drive for us, but they cannot differentiate betw
 
 As a society, we are collectively still blind when our machines are blind.
 
-The [original article][original article] was published on DataScience.com, Oracle's AI and DataScience Blog and [here][here] is the replica of the same. Both are written by me.
+The [original article][original article] was published on [DataScience.com][DataScience.com], Oracle's AI and DataScience Blog and [here][here] is the replica of the same on [The Startup][The Startup], Medium's largest active publication, followed by +696K people.
 
-If you have any questions feel free to write to [me](mailto:mayank1996.skb@hotmail.com).
+Give it a try and if you have any questions feel free to write to [me](mailto:mayank1996.skb@hotmail.com).
 
-
+[DataScience.com]: https://www.oracle.com/data-science/
 [original article]:      https://blogs.oracle.com/datascience/computer-vision-in-artificial-intelligence
-[here]:   https://medium.com/@mayank.skb/computer-vision-in-artificial-intelligence-ddd58ebbc70
+[here]:   https://medium.com/swlh/computer-vision-in-artificial-intelligence-ddd58ebbc70
+[The Startup]: https://medium.com/swlh
